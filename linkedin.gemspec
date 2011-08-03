@@ -17,12 +17,11 @@ Gem::Specification.new do |gem|
   gem.authors = ["Wynn Netherland", "Josh Kalderimis"]
   gem.description = %q{Ruby wrapper for the LinkedIn API}
   gem.email = ['wynn.netherland@gmail.com', 'josh.kalderimis@gmail.com']
-  gem.executables = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files = `git ls-files`.split("\n")
   gem.homepage = 'http://github.com/pengwynn/linkedin'
   gem.name = 'linkedin'
   gem.require_paths = ['lib']
   gem.summary = gem.description
-  gem.test_files = `git ls-files -- {test,spec,features}/*`.split("\n")
+  gem.test_files = `git ls-files -- spec/*`.split("\n")
   gem.version = LinkedIn::VERSION::STRING
 end
